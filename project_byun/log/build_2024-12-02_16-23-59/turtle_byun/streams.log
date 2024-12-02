@@ -1,0 +1,28 @@
+[1.531s] Invoking command in '/home/test/aiot_robot_project/project_byun/build/turtle_byun': PYTHONPATH=/home/test/aiot_robot_project/project_byun/build/turtle_byun/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/test/aiot_robot_project/project_byun/install/turtle_byun/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/test/aiot_robot_project/project_byun/build/turtle_byun/build --no-deps symlink_data
+[2.086s] running develop
+[2.488s] running egg_info
+[2.488s] creating turtle_byun.egg-info
+[2.490s] writing turtle_byun.egg-info/PKG-INFO
+[2.490s] writing dependency_links to turtle_byun.egg-info/dependency_links.txt
+[2.490s] writing entry points to turtle_byun.egg-info/entry_points.txt
+[2.491s] writing requirements to turtle_byun.egg-info/requires.txt
+[2.491s] writing top-level names to turtle_byun.egg-info/top_level.txt
+[2.492s] writing manifest file 'turtle_byun.egg-info/SOURCES.txt'
+[2.494s] reading manifest file 'turtle_byun.egg-info/SOURCES.txt'
+[2.495s] writing manifest file 'turtle_byun.egg-info/SOURCES.txt'
+[2.498s] running build_ext
+[2.498s] Creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/lib/python3.10/site-packages/turtle-byun.egg-link (link to .)
+[2.499s] Installing test_01 script to /home/test/aiot_robot_project/project_byun/install/turtle_byun/lib/turtle_byun
+[2.500s] 
+[2.500s] Installed /home/test/aiot_robot_project/project_byun/build/turtle_byun
+[2.501s] running symlink_data
+[2.501s] creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/ament_index
+[2.501s] creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/ament_index/resource_index
+[2.501s] creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/ament_index/resource_index/packages
+[2.501s] symbolically linking /home/test/aiot_robot_project/project_byun/build/turtle_byun/resource/turtle_byun -> /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/ament_index/resource_index/packages
+[2.501s] symbolically linking /home/test/aiot_robot_project/project_byun/build/turtle_byun/package.xml -> /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/turtle_byun
+[2.501s] creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/turtle_byun/launch
+[2.501s] creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/turtle_byun/urdf
+[2.501s] creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/turtle_byun/rviz
+[2.501s] creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/turtle_byun/meshes
+[2.556s] Invoked command in '/home/test/aiot_robot_project/project_byun/build/turtle_byun' returned '0': PYTHONPATH=/home/test/aiot_robot_project/project_byun/build/turtle_byun/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/test/aiot_robot_project/project_byun/install/turtle_byun/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/test/aiot_robot_project/project_byun/build/turtle_byun/build --no-deps symlink_data

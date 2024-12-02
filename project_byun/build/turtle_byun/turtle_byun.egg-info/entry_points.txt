@@ -1,0 +1,3 @@
+[console_scripts]
+test_01 = turtle_byun.test_01:main
+

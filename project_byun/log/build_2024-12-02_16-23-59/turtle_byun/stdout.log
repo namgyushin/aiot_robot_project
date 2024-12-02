@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating turtle_byun.egg-info
+writing turtle_byun.egg-info/PKG-INFO
+writing dependency_links to turtle_byun.egg-info/dependency_links.txt
+writing entry points to turtle_byun.egg-info/entry_points.txt
+writing requirements to turtle_byun.egg-info/requires.txt
+writing top-level names to turtle_byun.egg-info/top_level.txt
+writing manifest file 'turtle_byun.egg-info/SOURCES.txt'
+reading manifest file 'turtle_byun.egg-info/SOURCES.txt'
+writing manifest file 'turtle_byun.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/lib/python3.10/site-packages/turtle-byun.egg-link (link to .)
+Installing test_01 script to /home/test/aiot_robot_project/project_byun/install/turtle_byun/lib/turtle_byun
+
+Installed /home/test/aiot_robot_project/project_byun/build/turtle_byun
+running symlink_data
+creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/ament_index
+creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/ament_index/resource_index
+creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/ament_index/resource_index/packages
+symbolically linking /home/test/aiot_robot_project/project_byun/build/turtle_byun/resource/turtle_byun -> /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/ament_index/resource_index/packages
+symbolically linking /home/test/aiot_robot_project/project_byun/build/turtle_byun/package.xml -> /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/turtle_byun
+creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/turtle_byun/launch
+creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/turtle_byun/urdf
+creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/turtle_byun/rviz
+creating /home/test/aiot_robot_project/project_byun/install/turtle_byun/share/turtle_byun/meshes
