@@ -1,0 +1,114 @@
+[0.052s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/rosparam_shortcuts': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/aiot_robot_project/project_shin/src/rosparam_shortcuts -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts
+[0.433s] -- The C compiler identification is GNU 11.4.0
+[0.856s] -- The CXX compiler identification is GNU 11.4.0
+[0.905s] -- Detecting C compiler ABI info
+[1.369s] -- Detecting C compiler ABI info - done
+[1.405s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.409s] -- Detecting C compile features
+[1.409s] -- Detecting C compile features - done
+[1.423s] -- Detecting CXX compiler ABI info
+[1.977s] -- Detecting CXX compiler ABI info - done
+[2.020s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.020s] -- Detecting CXX compile features
+[2.021s] -- Detecting CXX compile features - done
+[2.037s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.735s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.064s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.112s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.121s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.270s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.294s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.342s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.407s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.495s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.725s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[3.985s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.998s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.426s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.531s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.709s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.776s] -- Looking for pthread.h
+[5.231s] -- Looking for pthread.h - found
+[5.240s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.625s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.631s] -- Found Threads: TRUE  
+[5.862s] -- Found tf2_eigen: 0.25.8 (/opt/ros/humble/share/tf2_eigen/cmake)
+[6.514s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.523s] -- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[6.526s] -- Found ros_testing: 0.4.0 (/opt/ros/humble/share/ros_testing/cmake)
+[6.534s] -- Found launch_testing_ament_cmake: 1.0.6 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[6.546s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[6.676s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[6.723s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[6.728s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.729s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.729s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[6.800s] -- Found PythonExtra: .so  
+[7.255s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[7.296s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.301s] -- Added test 'lint_cmake' to check CMake code style
+[7.306s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.310s] -- Added test 'xmllint' to check XML markup files
+[7.327s] -- Configuring done
+[7.507s] -- Generating done
+[7.570s] -- Build files have been written to: /home/user/aiot_robot_project/project_shin/build/rosparam_shortcuts
+[7.651s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/rosparam_shortcuts' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/aiot_robot_project/project_shin/src/rosparam_shortcuts -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts
+[7.661s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/rosparam_shortcuts': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/aiot_robot_project/project_shin/build/rosparam_shortcuts -- -j4 -l4
+[7.945s] [ 15%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[7.946s] [ 15%] [32mBuilding CXX object CMakeFiles/rosparam_shortcuts.dir/src/rosparam_shortcuts.cpp.o[0m
+[7.950s] [ 23%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[7.961s] [ 30%] [32mBuilding CXX object CMakeFiles/rosparam_shortcuts.dir/src/node_parameters.cpp.o[0m
+[17.583s] [ 38%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[17.782s] [ 38%] Built target gtest_main
+[55.947s] [ 46%] [32m[1mLinking CXX shared library librosparam_shortcuts.so[0m
+[57.174s] [ 46%] Built target rosparam_shortcuts
+[57.236s] [ 53%] [32m[1mLinking CXX static library libgtest.a[0m
+[57.494s] [ 53%] Built target gtest
+[57.615s] [ 61%] [32mBuilding CXX object CMakeFiles/rosparam_shortcuts_node_parameters_example.dir/src/node_parameters_example.cpp.o[0m
+[73.287s] [ 69%] [32m[1mLinking CXX executable node_parameters_example[0m
+[73.768s] [ 69%] Built target rosparam_shortcuts_node_parameters_example
+[73.819s] [ 76%] [32mBuilding CXX object CMakeFiles/test_node_parameters.dir/test/test_node_parameters.cpp.o[0m
+[90.521s] [ 84%] [32m[1mLinking CXX executable test_node_parameters[0m
+[91.075s] [ 84%] Built target test_node_parameters
+[91.125s] [ 92%] [32mBuilding CXX object CMakeFiles/rosparam_shortcuts_example.dir/src/example.cpp.o[0m
+[101.832s] [100%] [32m[1mLinking CXX executable example[0m
+[102.302s] [100%] Built target rosparam_shortcuts_example
+[102.336s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/rosparam_shortcuts' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/aiot_robot_project/project_shin/build/rosparam_shortcuts -- -j4 -l4
+[102.337s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/rosparam_shortcuts': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/aiot_robot_project/project_shin/build/rosparam_shortcuts
+[102.355s] -- Install configuration: "Release"
+[102.356s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/lib/librosparam_shortcuts.so
+[102.358s] -- Set runtime path of "/home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/lib/librosparam_shortcuts.so" to ""
+[102.358s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/lib/rosparam_shortcuts/example
+[102.360s] -- Set runtime path of "/home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/lib/rosparam_shortcuts/example" to ""
+[102.360s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/lib/rosparam_shortcuts/node_parameters_example
+[102.364s] -- Set runtime path of "/home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/lib/rosparam_shortcuts/node_parameters_example" to ""
+[102.365s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/include
+[102.365s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/include/rosparam_shortcuts
+[102.365s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/include/rosparam_shortcuts/rosparam_shortcuts.h
+[102.365s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/include/rosparam_shortcuts/node_parameters.h
+[102.366s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/launch
+[102.366s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/launch/example.launch.py
+[102.366s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/config
+[102.366s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/config/example.yaml
+[102.367s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/environment/library_path.sh
+[102.367s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/environment/library_path.dsv
+[102.367s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/ament_index/resource_index/package_run_dependencies/rosparam_shortcuts
+[102.368s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/ament_index/resource_index/parent_prefix_path/rosparam_shortcuts
+[102.368s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/environment/ament_prefix_path.sh
+[102.368s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/environment/ament_prefix_path.dsv
+[102.368s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/environment/path.sh
+[102.369s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/environment/path.dsv
+[102.369s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/local_setup.bash
+[102.369s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/local_setup.sh
+[102.369s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/local_setup.zsh
+[102.370s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/local_setup.dsv
+[102.370s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/package.dsv
+[102.370s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/ament_index/resource_index/packages/rosparam_shortcuts
+[102.371s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/cmake/export_rosparam_shortcutsExport.cmake
+[102.371s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/cmake/export_rosparam_shortcutsExport-release.cmake
+[102.372s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/cmake/ament_cmake_export_targets-extras.cmake
+[102.372s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/cmake/ament_cmake_export_dependencies-extras.cmake
+[102.373s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/cmake/rosparam_shortcutsConfig.cmake
+[102.373s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/cmake/rosparam_shortcutsConfig-version.cmake
+[102.373s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rosparam_shortcuts/share/rosparam_shortcuts/package.xml
+[102.379s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/rosparam_shortcuts' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/aiot_robot_project/project_shin/build/rosparam_shortcuts

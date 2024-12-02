@@ -1,0 +1,50 @@
+[2.137s] Invoking command in '/home/user/aiot_robot_project/project_shin/src/launch_param_builder': PYTHONPATH=/home/user/aiot_robot_project/project_shin/build/launch_param_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launch_param_builder build --build-base /home/user/aiot_robot_project/project_shin/build/launch_param_builder/build install --record /home/user/aiot_robot_project/project_shin/build/launch_param_builder/install.log --single-version-externally-managed install_data
+[2.836s] running egg_info
+[2.837s] creating ../../build/launch_param_builder/launch_param_builder.egg-info
+[2.838s] writing ../../build/launch_param_builder/launch_param_builder.egg-info/PKG-INFO
+[2.840s] writing dependency_links to ../../build/launch_param_builder/launch_param_builder.egg-info/dependency_links.txt
+[2.840s] writing entry points to ../../build/launch_param_builder/launch_param_builder.egg-info/entry_points.txt
+[2.841s] writing requirements to ../../build/launch_param_builder/launch_param_builder.egg-info/requires.txt
+[2.842s] writing top-level names to ../../build/launch_param_builder/launch_param_builder.egg-info/top_level.txt
+[2.843s] writing manifest file '../../build/launch_param_builder/launch_param_builder.egg-info/SOURCES.txt'
+[2.848s] reading manifest file '../../build/launch_param_builder/launch_param_builder.egg-info/SOURCES.txt'
+[2.851s] adding license file 'LICENSE'
+[2.852s] writing manifest file '../../build/launch_param_builder/launch_param_builder.egg-info/SOURCES.txt'
+[2.875s] running build
+[2.875s] running build_py
+[2.875s] creating /home/user/aiot_robot_project/project_shin/build/launch_param_builder/build
+[2.875s] creating /home/user/aiot_robot_project/project_shin/build/launch_param_builder/build/lib
+[2.875s] creating /home/user/aiot_robot_project/project_shin/build/launch_param_builder/build/lib/launch_param_builder
+[2.876s] copying launch_param_builder/__init__.py -> /home/user/aiot_robot_project/project_shin/build/launch_param_builder/build/lib/launch_param_builder
+[2.876s] copying launch_param_builder/launch_param_builder.py -> /home/user/aiot_robot_project/project_shin/build/launch_param_builder/build/lib/launch_param_builder
+[2.876s] copying launch_param_builder/utils.py -> /home/user/aiot_robot_project/project_shin/build/launch_param_builder/build/lib/launch_param_builder
+[2.876s] running install
+[2.876s] running install_lib
+[2.877s] creating /home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder
+[2.878s] copying /home/user/aiot_robot_project/project_shin/build/launch_param_builder/build/lib/launch_param_builder/__init__.py -> /home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder
+[2.878s] copying /home/user/aiot_robot_project/project_shin/build/launch_param_builder/build/lib/launch_param_builder/launch_param_builder.py -> /home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder
+[2.879s] copying /home/user/aiot_robot_project/project_shin/build/launch_param_builder/build/lib/launch_param_builder/utils.py -> /home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder
+[2.881s] byte-compiling /home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder/__init__.py to __init__.cpython-310.pyc
+[2.884s] byte-compiling /home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder/launch_param_builder.py to launch_param_builder.cpython-310.pyc
+[2.884s] byte-compiling /home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder/utils.py to utils.cpython-310.pyc
+[2.886s] running install_data
+[2.887s] creating /home/user/aiot_robot_project/project_shin/install/launch_param_builder/share/ament_index
+[2.888s] creating /home/user/aiot_robot_project/project_shin/install/launch_param_builder/share/ament_index/resource_index
+[2.888s] creating /home/user/aiot_robot_project/project_shin/install/launch_param_builder/share/ament_index/resource_index/packages
+[2.888s] copying resource/launch_param_builder -> /home/user/aiot_robot_project/project_shin/install/launch_param_builder/share/ament_index/resource_index/packages
+[2.889s] creating /home/user/aiot_robot_project/project_shin/install/launch_param_builder/share/launch_param_builder/launch
+[2.889s] copying example/launch_param_builder_example.launch.py -> /home/user/aiot_robot_project/project_shin/install/launch_param_builder/share/launch_param_builder/launch
+[2.890s] creating /home/user/aiot_robot_project/project_shin/install/launch_param_builder/share/launch_param_builder/config
+[2.891s] copying test/data/parameter.xacro -> /home/user/aiot_robot_project/project_shin/install/launch_param_builder/share/launch_param_builder/config
+[2.892s] copying test/data/parameters.yaml -> /home/user/aiot_robot_project/project_shin/install/launch_param_builder/share/launch_param_builder/config
+[2.892s] copying test/data/param_file_to_inject.yaml -> /home/user/aiot_robot_project/project_shin/install/launch_param_builder/share/launch_param_builder/config
+[2.893s] copying test/data/parameter_file -> /home/user/aiot_robot_project/project_shin/install/launch_param_builder/share/launch_param_builder/config
+[2.893s] copying test/data/parameters_injection.yaml -> /home/user/aiot_robot_project/project_shin/install/launch_param_builder/share/launch_param_builder/config
+[2.894s] copying package.xml -> /home/user/aiot_robot_project/project_shin/install/launch_param_builder/share/launch_param_builder
+[2.895s] creating /home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/launch_param_builder
+[2.895s] copying example/example_node.py -> /home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/launch_param_builder
+[2.896s] running install_egg_info
+[2.901s] Copying ../../build/launch_param_builder/launch_param_builder.egg-info to /home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder-0.1.1-py3.10.egg-info
+[2.905s] running install_scripts
+[2.961s] writing list of installed files to '/home/user/aiot_robot_project/project_shin/build/launch_param_builder/install.log'
+[3.089s] Invoked command in '/home/user/aiot_robot_project/project_shin/src/launch_param_builder' returned '0': PYTHONPATH=/home/user/aiot_robot_project/project_shin/build/launch_param_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launch_param_builder build --build-base /home/user/aiot_robot_project/project_shin/build/launch_param_builder/build install --record /home/user/aiot_robot_project/project_shin/build/launch_param_builder/install.log --single-version-externally-managed install_data

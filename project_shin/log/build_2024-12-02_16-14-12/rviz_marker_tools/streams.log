@@ -1,0 +1,75 @@
+[0.050s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/rviz_marker_tools': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_common:/opt/ros/humble /usr/bin/cmake /home/user/aiot_robot_project/project_shin/src/moveit_task_constructor/rviz_marker_tools -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/user/aiot_robot_project/project_shin/install/rviz_marker_tools
+[0.401s] -- The C compiler identification is GNU 11.4.0
+[0.777s] -- The CXX compiler identification is GNU 11.4.0
+[0.822s] -- Detecting C compiler ABI info
+[1.295s] -- Detecting C compiler ABI info - done
+[1.338s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.339s] -- Detecting C compile features
+[1.339s] -- Detecting C compile features - done
+[1.363s] -- Detecting CXX compiler ABI info
+[1.809s] -- Detecting CXX compiler ABI info - done
+[1.832s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.833s] -- Detecting CXX compile features
+[1.834s] -- Detecting CXX compile features - done
+[1.850s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.571s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.037s] -- Found moveit_common: 2.5.6 (/home/user/aiot_robot_project/project_shin/install/moveit_common/share/moveit_common/cmake)
+[3.322s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.356s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.357s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.535s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.556s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.602s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.670s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.765s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.997s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[4.188s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.203s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.651s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.782s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.973s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.028s] -- Looking for pthread.h
+[5.453s] -- Looking for pthread.h - found
+[5.455s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.792s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.803s] -- Found Threads: TRUE  
+[6.068s] -- Found tf2_eigen: 0.25.8 (/opt/ros/humble/share/tf2_eigen/cmake)
+[6.706s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[6.916s] -- Configuring done
+[6.994s] -- Generating done
+[7.015s] -- Build files have been written to: /home/user/aiot_robot_project/project_shin/build/rviz_marker_tools
+[7.098s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/rviz_marker_tools' returned '0': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_common:/opt/ros/humble /usr/bin/cmake /home/user/aiot_robot_project/project_shin/src/moveit_task_constructor/rviz_marker_tools -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/user/aiot_robot_project/project_shin/install/rviz_marker_tools
+[7.100s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/rviz_marker_tools': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_common:/opt/ros/humble /usr/bin/cmake --build /home/user/aiot_robot_project/project_shin/build/rviz_marker_tools -- -j4 -l4
+[7.400s] [ 50%] [32mBuilding CXX object CMakeFiles/rviz_marker_tools.dir/src/marker_creation.cpp.o[0m
+[46.449s] [100%] [32m[1mLinking CXX shared library librviz_marker_tools.so[0m
+[47.873s] [100%] Built target rviz_marker_tools
+[47.935s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/rviz_marker_tools' returned '0': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_common:/opt/ros/humble /usr/bin/cmake --build /home/user/aiot_robot_project/project_shin/build/rviz_marker_tools -- -j4 -l4
+[47.945s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/rviz_marker_tools': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_common:/opt/ros/humble /usr/bin/cmake --install /home/user/aiot_robot_project/project_shin/build/rviz_marker_tools
+[47.991s] -- Install configuration: "Release"
+[47.991s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/include
+[48.001s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/include/rviz_marker_tools
+[48.001s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/include/rviz_marker_tools/marker_creation.h
+[48.001s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/lib/librviz_marker_tools.so
+[48.006s] -- Set runtime path of "/home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/lib/librviz_marker_tools.so" to ""
+[48.007s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/environment/library_path.sh
+[48.009s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/environment/library_path.dsv
+[48.016s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/ament_index/resource_index/package_run_dependencies/rviz_marker_tools
+[48.023s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/ament_index/resource_index/parent_prefix_path/rviz_marker_tools
+[48.024s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/environment/ament_prefix_path.sh
+[48.025s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/environment/ament_prefix_path.dsv
+[48.030s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/environment/path.sh
+[48.032s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/environment/path.dsv
+[48.036s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.bash
+[48.042s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.sh
+[48.042s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.zsh
+[48.051s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.dsv
+[48.051s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/package.dsv
+[48.051s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/ament_index/resource_index/packages/rviz_marker_tools
+[48.053s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsTargetsExport.cmake
+[48.058s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsTargetsExport-release.cmake
+[48.061s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/cmake/ament_cmake_export_targets-extras.cmake
+[48.064s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/cmake/ament_cmake_export_dependencies-extras.cmake
+[48.068s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsConfig.cmake
+[48.068s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsConfig-version.cmake
+[48.071s] -- Installing: /home/user/aiot_robot_project/project_shin/install/rviz_marker_tools/share/rviz_marker_tools/package.xml
+[48.087s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/rviz_marker_tools' returned '0': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_common:/opt/ros/humble /usr/bin/cmake --install /home/user/aiot_robot_project/project_shin/build/rviz_marker_tools

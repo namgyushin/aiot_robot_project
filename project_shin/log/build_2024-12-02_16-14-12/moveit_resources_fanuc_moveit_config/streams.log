@@ -1,0 +1,56 @@
+[0.038s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/moveit_resources_fanuc_moveit_config': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/opt/ros/humble /usr/bin/cmake /home/user/aiot_robot_project/project_shin/src/moveit_resources/fanuc_moveit_config -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config
+[0.260s] -- The C compiler identification is GNU 11.4.0
+[0.475s] -- The CXX compiler identification is GNU 11.4.0
+[0.505s] -- Detecting C compiler ABI info
+[0.877s] -- Detecting C compiler ABI info - done
+[0.938s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.938s] -- Detecting C compile features
+[0.938s] -- Detecting C compile features - done
+[0.959s] -- Detecting CXX compiler ABI info
+[1.332s] -- Detecting CXX compiler ABI info - done
+[1.377s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.383s] -- Detecting CXX compile features
+[1.387s] -- Detecting CXX compile features - done
+[1.405s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.286s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.195s] -- Configuring done
+[3.236s] -- Generating done
+[3.255s] -- Build files have been written to: /home/user/aiot_robot_project/project_shin/build/moveit_resources_fanuc_moveit_config
+[3.289s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/moveit_resources_fanuc_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/opt/ros/humble /usr/bin/cmake /home/user/aiot_robot_project/project_shin/src/moveit_resources/fanuc_moveit_config -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config
+[3.289s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/moveit_resources_fanuc_moveit_config': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/opt/ros/humble /usr/bin/cmake --build /home/user/aiot_robot_project/project_shin/build/moveit_resources_fanuc_moveit_config -- -j4 -l4
+[3.562s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/moveit_resources_fanuc_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/opt/ros/humble /usr/bin/cmake --build /home/user/aiot_robot_project/project_shin/build/moveit_resources_fanuc_moveit_config -- -j4 -l4
+[3.573s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/moveit_resources_fanuc_moveit_config': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/opt/ros/humble /usr/bin/cmake --install /home/user/aiot_robot_project/project_shin/build/moveit_resources_fanuc_moveit_config
+[3.605s] -- Install configuration: "Release"
+[3.609s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/ament_index/resource_index/package_run_dependencies/moveit_resources_fanuc_moveit_config
+[3.611s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/ament_index/resource_index/parent_prefix_path/moveit_resources_fanuc_moveit_config
+[3.611s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/environment/ament_prefix_path.sh
+[3.613s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/environment/ament_prefix_path.dsv
+[3.613s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/environment/path.sh
+[3.613s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/environment/path.dsv
+[3.615s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/local_setup.bash
+[3.616s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/local_setup.sh
+[3.616s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/local_setup.zsh
+[3.616s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/local_setup.dsv
+[3.617s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/package.dsv
+[3.617s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/ament_index/resource_index/packages/moveit_resources_fanuc_moveit_config
+[3.621s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/cmake/moveit_resources_fanuc_moveit_configConfig.cmake
+[3.622s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/cmake/moveit_resources_fanuc_moveit_configConfig-version.cmake
+[3.623s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/package.xml
+[3.623s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/launch
+[3.623s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/launch/demo.launch.py
+[3.623s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/launch/moveit.rviz
+[3.626s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/config
+[3.626s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/config/pilz_cartesian_limits.yaml
+[3.627s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/config/fanuc.urdf.xacro
+[3.627s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/config/ros2_controllers.yaml
+[3.629s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/config/fanuc.srdf
+[3.631s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/config/chomp_planning.yaml
+[3.631s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/config/initial_positions.yaml
+[3.631s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/config/joint_limits.yaml
+[3.631s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/config/moveit_controllers.yaml
+[3.632s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/config/kinematics.yaml
+[3.634s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/config/ompl_planning.yaml
+[3.635s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/config/sensors_3d.yaml
+[3.635s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/config/fanuc.ros2_control.xacro
+[3.635s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/.setup_assistant
+[3.645s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/moveit_resources_fanuc_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/opt/ros/humble /usr/bin/cmake --install /home/user/aiot_robot_project/project_shin/build/moveit_resources_fanuc_moveit_config

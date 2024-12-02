@@ -1,0 +1,204 @@
+[0.055s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/moveit_kinematics': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor:/home/user/aiot_robot_project/project_shin/install/moveit_core:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils:/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/moveit_resources_pr2_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/home/user/aiot_robot_project/project_shin/install/moveit_common:/home/user/aiot_robot_project/project_shin/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor:/home/user/aiot_robot_project/project_shin/install/moveit_core:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config:/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/moveit_resources_pr2_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/home/user/aiot_robot_project/project_shin/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning/lib:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor/lib:/home/user/aiot_robot_project/project_shin/install/moveit_core/lib:/home/user/aiot_robot_project/project_shin/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/user/aiot_robot_project/project_shin/install/moveit_core/bin:${PATH} PYTHONPATH=/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages:/home/user/aiot_robot_project/project_shin/install/srdfdom/local/lib/python3.10/dist-packages:/home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/user/aiot_robot_project/project_shin/src/moveit2/moveit_kinematics -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/user/aiot_robot_project/project_shin/install/moveit_kinematics
+[0.278s] -- The C compiler identification is GNU 11.4.0
+[0.469s] -- The CXX compiler identification is GNU 11.4.0
+[0.492s] -- Detecting C compiler ABI info
+[0.712s] -- Detecting C compiler ABI info - done
+[0.740s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.741s] -- Detecting C compile features
+[0.741s] -- Detecting C compile features - done
+[0.747s] -- Detecting CXX compiler ABI info
+[1.002s] -- Detecting CXX compiler ABI info - done
+[1.033s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.033s] -- Detecting CXX compile features
+[1.034s] -- Detecting CXX compile features - done
+[1.039s] -- Found moveit_common: 2.5.6 (/home/user/aiot_robot_project/project_shin/install/moveit_common/share/moveit_common/cmake)
+[1.047s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.494s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.006s] -- Found tf2_kdl: 0.25.8 (/opt/ros/humble/share/tf2_kdl/cmake)
+[2.120s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.139s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.166s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.209s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.264s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.405s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.408s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.408s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.651s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.661s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.898s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.968s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.066s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.094s] -- Looking for pthread.h
+[3.319s] -- Looking for pthread.h - found
+[3.328s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.605s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.612s] -- Found Threads: TRUE  
+[3.900s] -- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)
+[3.917s] -- Found random_numbers: 2.0.1 (/opt/ros/humble/share/random_numbers/cmake)
+[3.948s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[3.986s] -- Found moveit_core: 2.5.6 (/home/user/aiot_robot_project/project_shin/install/moveit_core/share/moveit_core/cmake)
+[4.084s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[4.203s] -- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)
+[4.247s] -- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[4.315s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[4.545s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[5.056s] -- Found moveit_ros_planning: 2.5.6 (/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning/share/moveit_ros_planning/cmake)
+[5.068s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[5.145s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: program_options system 
+[5.304s] -- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[5.312s] -- Found ros_testing: 0.4.0 (/opt/ros/humble/share/ros_testing/cmake)
+[5.319s] -- Found launch_testing_ament_cmake: 1.0.6 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[5.327s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.392s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[5.407s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[5.409s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.409s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.410s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[5.481s] -- Found PythonExtra: .so  
+[5.485s] -- Found moveit_resources_fanuc_description: 2.0.7 (/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/cmake)
+[5.488s] -- Found moveit_resources_fanuc_moveit_config: 2.0.7 (/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/cmake)
+[5.493s] -- Found moveit_resources_panda_description: 2.0.7 (/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/cmake)
+[5.495s] -- Found moveit_resources_panda_moveit_config: 2.0.7 (/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/cmake)
+[5.506s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.556s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.586s] -- Found launch_testing_ament_cmake: 1.0.6 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[5.587s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.654s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.655s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.655s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[5.730s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.730s] -- Configured cppcheck include dirs: /home/user/aiot_robot_project/project_shin/src/moveit2/moveit_kinematics/kdl_kinematics_plugin/include;/home/user/aiot_robot_project/project_shin/src/moveit2/moveit_kinematics/lma_kinematics_plugin/include;/home/user/aiot_robot_project/project_shin/src/moveit2/moveit_kinematics/srv_kinematics_plugin/include;/home/user/aiot_robot_project/project_shin/src/moveit2/moveit_kinematics/cached_ik_kinematics_plugin/include
+[5.730s] -- Configured cppcheck exclude dirs and/or files: 
+[5.736s] -- Added test 'lint_cmake' to check CMake code style
+[5.748s] -- Configuring done
+[6.182s] -- Generating done
+[6.277s] -- Build files have been written to: /home/user/aiot_robot_project/project_shin/build/moveit_kinematics
+[6.363s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/moveit_kinematics' returned '0': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor:/home/user/aiot_robot_project/project_shin/install/moveit_core:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils:/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/moveit_resources_pr2_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/home/user/aiot_robot_project/project_shin/install/moveit_common:/home/user/aiot_robot_project/project_shin/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor:/home/user/aiot_robot_project/project_shin/install/moveit_core:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config:/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/moveit_resources_pr2_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/home/user/aiot_robot_project/project_shin/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning/lib:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor/lib:/home/user/aiot_robot_project/project_shin/install/moveit_core/lib:/home/user/aiot_robot_project/project_shin/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/user/aiot_robot_project/project_shin/install/moveit_core/bin:${PATH} PYTHONPATH=/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages:/home/user/aiot_robot_project/project_shin/install/srdfdom/local/lib/python3.10/dist-packages:/home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/user/aiot_robot_project/project_shin/src/moveit2/moveit_kinematics -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/user/aiot_robot_project/project_shin/install/moveit_kinematics
+[6.364s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/moveit_kinematics': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor:/home/user/aiot_robot_project/project_shin/install/moveit_core:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils:/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/moveit_resources_pr2_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/home/user/aiot_robot_project/project_shin/install/moveit_common:/home/user/aiot_robot_project/project_shin/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor:/home/user/aiot_robot_project/project_shin/install/moveit_core:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config:/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/moveit_resources_pr2_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/home/user/aiot_robot_project/project_shin/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning/lib:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor/lib:/home/user/aiot_robot_project/project_shin/install/moveit_core/lib:/home/user/aiot_robot_project/project_shin/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/user/aiot_robot_project/project_shin/install/moveit_core/bin:${PATH} PYTHONPATH=/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages:/home/user/aiot_robot_project/project_shin/install/srdfdom/local/lib/python3.10/dist-packages:/home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/aiot_robot_project/project_shin/build/moveit_kinematics -- -j4 -l4
+[6.596s] [  5%] [32mBuilding CXX object kdl_kinematics_plugin/CMakeFiles/moveit_kdl_kinematics_plugin.dir/src/kdl_kinematics_plugin.cpp.o[0m
+[6.602s] [ 15%] [32mBuilding CXX object lma_kinematics_plugin/CMakeFiles/moveit_lma_kinematics_plugin.dir/src/lma_kinematics_plugin.cpp.o[0m
+[6.602s] [ 21%] [32mBuilding CXX object cached_ik_kinematics_plugin/CMakeFiles/moveit_cached_ik_kinematics_base.dir/src/ik_cache.cpp.o[0m
+[6.609s] [ 21%] [32mBuilding CXX object srv_kinematics_plugin/CMakeFiles/moveit_srv_kinematics_plugin.dir/src/srv_kinematics_plugin.cpp.o[0m
+[98.397s] [ 26%] [32m[1mLinking CXX shared library libmoveit_lma_kinematics_plugin.so[0m
+[100.171s] [ 31%] [32m[1mLinking CXX shared library libmoveit_srv_kinematics_plugin.so[0m
+[100.556s] [ 31%] Built target moveit_lma_kinematics_plugin
+[101.871s] [ 31%] Built target moveit_srv_kinematics_plugin
+[104.439s] [ 36%] [32m[1mLinking CXX shared library libmoveit_cached_ik_kinematics_base.so[0m
+[104.843s] [ 42%] [32mBuilding CXX object kdl_kinematics_plugin/CMakeFiles/moveit_kdl_kinematics_plugin.dir/src/chainiksolver_vel_mimic_svd.cpp.o[0m
+[106.016s] [ 42%] Built target moveit_cached_ik_kinematics_base
+[132.061s] [ 47%] [32m[1mLinking CXX shared library libmoveit_kdl_kinematics_plugin.so[0m
+[132.905s] [ 47%] Built target moveit_kdl_kinematics_plugin
+[132.975s] [ 52%] [32mBuilding CXX object test/CMakeFiles/benchmark_ik.dir/benchmark_ik.cpp.o[0m
+[166.894s] [ 57%] [32m[1mLinking CXX executable benchmark_ik[0m
+[168.245s] [ 57%] Built target benchmark_ik
+[168.319s] [ 63%] [32mBuilding CXX object cached_ik_kinematics_plugin/CMakeFiles/moveit_cached_ik_kinematics_plugin.dir/src/cached_ik_kinematics_plugin.cpp.o[0m
+[195.003s] [ 68%] [32m[1mLinking CXX shared library libmoveit_cached_ik_kinematics_plugin.so[0m
+[195.865s] [ 68%] Built target moveit_cached_ik_kinematics_plugin
+[195.929s] [ 73%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[217.726s] [ 78%] [32m[1mLinking CXX static library libgtest.a[0m
+[217.892s] [ 78%] Built target gtest
+[217.956s] [ 84%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[221.219s] [ 89%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[221.340s] [ 89%] Built target gtest_main
+[221.413s] [ 94%] [32mBuilding CXX object test/CMakeFiles/test_kinematics_plugin.dir/test_kinematics_plugin.cpp.o[0m
+[286.815s] [100%] [32m[1mLinking CXX executable test_kinematics_plugin[0m
+[288.645s] [100%] Built target test_kinematics_plugin
+[288.690s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/moveit_kinematics' returned '0': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor:/home/user/aiot_robot_project/project_shin/install/moveit_core:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils:/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/moveit_resources_pr2_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/home/user/aiot_robot_project/project_shin/install/moveit_common:/home/user/aiot_robot_project/project_shin/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor:/home/user/aiot_robot_project/project_shin/install/moveit_core:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config:/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/moveit_resources_pr2_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/home/user/aiot_robot_project/project_shin/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning/lib:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor/lib:/home/user/aiot_robot_project/project_shin/install/moveit_core/lib:/home/user/aiot_robot_project/project_shin/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/user/aiot_robot_project/project_shin/install/moveit_core/bin:${PATH} PYTHONPATH=/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages:/home/user/aiot_robot_project/project_shin/install/srdfdom/local/lib/python3.10/dist-packages:/home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/aiot_robot_project/project_shin/build/moveit_kinematics -- -j4 -l4
+[288.696s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/moveit_kinematics': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor:/home/user/aiot_robot_project/project_shin/install/moveit_core:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils:/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/moveit_resources_pr2_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/home/user/aiot_robot_project/project_shin/install/moveit_common:/home/user/aiot_robot_project/project_shin/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor:/home/user/aiot_robot_project/project_shin/install/moveit_core:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config:/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/moveit_resources_pr2_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/home/user/aiot_robot_project/project_shin/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning/lib:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor/lib:/home/user/aiot_robot_project/project_shin/install/moveit_core/lib:/home/user/aiot_robot_project/project_shin/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/user/aiot_robot_project/project_shin/install/moveit_core/bin:${PATH} PYTHONPATH=/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages:/home/user/aiot_robot_project/project_shin/install/srdfdom/local/lib/python3.10/dist-packages:/home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/aiot_robot_project/project_shin/build/moveit_kinematics
+[288.723s] -- Install configuration: "Release"
+[288.723s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/kdl_kinematics_plugin_description.xml
+[288.723s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/lma_kinematics_plugin_description.xml
+[288.726s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/srv_kinematics_plugin_description.xml
+[288.726s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/cached_ik_kinematics_plugin_description.xml
+[288.727s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include
+[288.730s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit
+[288.731s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin
+[288.731s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/cached_ik_kinematics_plugin.h
+[288.731s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/detail
+[288.731s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/detail/NearestNeighborsGNAT.h
+[288.732s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/detail/NearestNeighbors.h
+[288.732s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/detail/GreedyKCenters.h
+[288.732s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/cached_ik_kinematics_plugin-inl.h
+[288.734s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/launch
+[288.734s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/launch/measure_ik_call_cost.launch
+[288.737s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/moveit_kinematics/auto_create_ikfast_moveit_plugin.sh
+[288.737s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/moveit_kinematics/create_ikfast_moveit_plugin.py
+[288.738s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/moveit_kinematics/round_collada_numbers.py
+[288.740s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/ikfast_kinematics_plugin/templates
+[288.740s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/ikfast_kinematics_plugin/templates/CMakeLists.txt
+[288.741s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/ikfast_kinematics_plugin/templates/ikfast.h
+[288.742s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/ikfast_kinematics_plugin/templates/ikfast61_moveit_plugin_template.cpp
+[288.748s] -- Up-to-date: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include
+[288.748s] -- Up-to-date: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit
+[288.748s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/kdl_kinematics_plugin
+[288.749s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/kdl_kinematics_plugin/joint_mimic.hpp
+[288.751s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/kdl_kinematics_plugin/chainiksolver_vel_mimic_svd.hpp
+[288.752s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/kdl_kinematics_plugin/kdl_kinematics_plugin.h
+[288.752s] -- Up-to-date: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include
+[288.752s] -- Up-to-date: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit
+[288.752s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/lma_kinematics_plugin
+[288.752s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/lma_kinematics_plugin/lma_kinematics_plugin.h
+[288.753s] -- Up-to-date: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include
+[288.754s] -- Up-to-date: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit
+[288.755s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/srv_kinematics_plugin
+[288.755s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/include/moveit/srv_kinematics_plugin/srv_kinematics_plugin.h
+[288.759s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/config
+[288.759s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/config/fanuc-kdl-singular-test.yaml
+[288.759s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/config/panda-kdl-singular-test.yaml
+[288.760s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/config/panda-lma-singular-test.yaml
+[288.761s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/config/fanuc-kdl-test.yaml
+[288.763s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/config/panda-kdl-test.yaml
+[288.763s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/config/fanuc-lma-singular-test.yaml
+[288.764s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/config/fanuc-lma-test.yaml
+[288.765s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/config/panda-lma-test.yaml
+[288.767s] -- Up-to-date: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/launch
+[288.767s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/launch/fanuc-kdl.test.py
+[288.768s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/launch/panda-kdl.test.py
+[288.770s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/launch/panda-lma.test.py
+[288.771s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/launch/fanuc-lma-singular.test.py
+[288.772s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/launch/fanuc-lma.test.py
+[288.773s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/launch/panda-kdl-singular.test.py
+[288.774s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/launch/fanuc-kdl-singular.test.py
+[288.775s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/launch/panda-lma-singular.test.py
+[288.779s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/moveit_kinematics/benchmark_ik
+[288.779s] -- Set runtime path of "/home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/moveit_kinematics/benchmark_ik" to ""
+[288.780s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/moveit_kinematics/test_kinematics_plugin
+[288.787s] -- Set runtime path of "/home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/moveit_kinematics/test_kinematics_plugin" to ""
+[288.788s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_base.so.2.5.6
+[288.794s] -- Set runtime path of "/home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_base.so.2.5.6" to ""
+[288.796s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_base.so
+[288.798s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_plugin.so.2.5.6
+[288.802s] -- Set runtime path of "/home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_plugin.so.2.5.6" to ""
+[288.804s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_plugin.so
+[288.805s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_kdl_kinematics_plugin.so
+[288.811s] -- Set runtime path of "/home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_kdl_kinematics_plugin.so" to ""
+[288.813s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_lma_kinematics_plugin.so.2.5.6
+[288.820s] -- Set runtime path of "/home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_lma_kinematics_plugin.so.2.5.6" to ""
+[288.821s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_lma_kinematics_plugin.so
+[288.822s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_srv_kinematics_plugin.so.2.5.6
+[288.828s] -- Set runtime path of "/home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_srv_kinematics_plugin.so.2.5.6" to ""
+[288.830s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/lib/libmoveit_srv_kinematics_plugin.so
+[288.830s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/environment/library_path.sh
+[288.832s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/environment/library_path.dsv
+[288.833s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/ament_index/resource_index/package_run_dependencies/moveit_kinematics
+[288.835s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/ament_index/resource_index/parent_prefix_path/moveit_kinematics
+[288.838s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/environment/ament_prefix_path.sh
+[288.838s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/environment/ament_prefix_path.dsv
+[288.840s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/environment/path.sh
+[288.841s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/environment/path.dsv
+[288.843s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/local_setup.bash
+[288.844s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/local_setup.sh
+[288.846s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/local_setup.zsh
+[288.847s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/local_setup.dsv
+[288.848s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/package.dsv
+[288.850s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/ament_index/resource_index/packages/moveit_kinematics
+[288.851s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/ament_index/resource_index/moveit_core__pluginlib__plugin/moveit_kinematics
+[288.852s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/cmake/export_moveit_kinematicsExport.cmake
+[288.854s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/cmake/export_moveit_kinematicsExport-release.cmake
+[288.855s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/cmake/ConfigExtras.cmake
+[288.857s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/cmake/ament_cmake_export_targets-extras.cmake
+[288.858s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/cmake/ament_cmake_export_dependencies-extras.cmake
+[288.859s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/cmake/moveit_kinematicsConfig.cmake
+[288.860s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/cmake/moveit_kinematicsConfig-version.cmake
+[288.862s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_kinematics/share/moveit_kinematics/package.xml
+[288.868s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/moveit_kinematics' returned '0': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor:/home/user/aiot_robot_project/project_shin/install/moveit_core:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils:/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/moveit_resources_pr2_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/home/user/aiot_robot_project/project_shin/install/moveit_common:/home/user/aiot_robot_project/project_shin/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor:/home/user/aiot_robot_project/project_shin/install/moveit_core:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_moveit_config:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_moveit_config:/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/moveit_resources_pr2_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description:/home/user/aiot_robot_project/project_shin/install/moveit_resources_fanuc_description:/home/user/aiot_robot_project/project_shin/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/user/aiot_robot_project/project_shin/install/moveit_ros_planning/lib:/home/user/aiot_robot_project/project_shin/install/moveit_ros_occupancy_map_monitor/lib:/home/user/aiot_robot_project/project_shin/install/moveit_core/lib:/home/user/aiot_robot_project/project_shin/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/user/aiot_robot_project/project_shin/install/moveit_core/bin:${PATH} PYTHONPATH=/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages:/home/user/aiot_robot_project/project_shin/install/srdfdom/local/lib/python3.10/dist-packages:/home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/aiot_robot_project/project_shin/build/moveit_kinematics

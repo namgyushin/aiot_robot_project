@@ -1,0 +1,55 @@
+[2.083s] Invoking command in '/home/user/aiot_robot_project/project_shin/src/moveit2/moveit_configs_utils': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/srdfdom LD_LIBRARY_PATH=/home/user/aiot_robot_project/project_shin/install/srdfdom/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages:/home/user/aiot_robot_project/project_shin/install/srdfdom/local/lib/python3.10/dist-packages:/home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/moveit_configs_utils build --build-base /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build install --record /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/install.log --single-version-externally-managed install_data
+[2.965s] running egg_info
+[2.966s] creating ../../../build/moveit_configs_utils/moveit_configs_utils.egg-info
+[2.966s] writing ../../../build/moveit_configs_utils/moveit_configs_utils.egg-info/PKG-INFO
+[2.969s] writing dependency_links to ../../../build/moveit_configs_utils/moveit_configs_utils.egg-info/dependency_links.txt
+[2.969s] writing entry points to ../../../build/moveit_configs_utils/moveit_configs_utils.egg-info/entry_points.txt
+[2.970s] writing requirements to ../../../build/moveit_configs_utils/moveit_configs_utils.egg-info/requires.txt
+[2.970s] writing top-level names to ../../../build/moveit_configs_utils/moveit_configs_utils.egg-info/top_level.txt
+[2.970s] writing manifest file '../../../build/moveit_configs_utils/moveit_configs_utils.egg-info/SOURCES.txt'
+[2.976s] reading manifest file '../../../build/moveit_configs_utils/moveit_configs_utils.egg-info/SOURCES.txt'
+[2.979s] writing manifest file '../../../build/moveit_configs_utils/moveit_configs_utils.egg-info/SOURCES.txt'
+[2.979s] running build
+[2.980s] running build_py
+[2.980s] creating /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build
+[2.980s] creating /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib
+[2.980s] creating /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils
+[2.980s] copying moveit_configs_utils/__init__.py -> /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils
+[2.981s] copying moveit_configs_utils/launches.py -> /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils
+[2.981s] copying moveit_configs_utils/launch_utils.py -> /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils
+[2.981s] copying moveit_configs_utils/moveit_configs_builder.py -> /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils
+[2.981s] creating /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils/substitutions
+[2.981s] copying moveit_configs_utils/substitutions/__init__.py -> /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils/substitutions
+[2.982s] copying moveit_configs_utils/substitutions/xacro.py -> /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils/substitutions
+[2.984s] running install
+[2.988s] running install_lib
+[2.988s] creating /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils
+[2.989s] copying /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils/__init__.py -> /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils
+[2.989s] creating /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils/substitutions
+[2.990s] copying /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils/substitutions/__init__.py -> /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils/substitutions
+[2.990s] copying /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils/substitutions/xacro.py -> /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils/substitutions
+[2.991s] copying /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils/launches.py -> /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils
+[2.992s] copying /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils/launch_utils.py -> /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils
+[2.996s] copying /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build/lib/moveit_configs_utils/moveit_configs_builder.py -> /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils
+[2.996s] byte-compiling /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils/__init__.py to __init__.cpython-310.pyc
+[2.997s] byte-compiling /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils/substitutions/__init__.py to __init__.cpython-310.pyc
+[2.997s] byte-compiling /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils/substitutions/xacro.py to xacro.cpython-310.pyc
+[2.999s] byte-compiling /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils/launches.py to launches.cpython-310.pyc
+[3.006s] byte-compiling /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils/launch_utils.py to launch_utils.cpython-310.pyc
+[3.006s] byte-compiling /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils/moveit_configs_builder.py to moveit_configs_builder.cpython-310.pyc
+[3.013s] running install_data
+[3.014s] creating /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/share/ament_index
+[3.014s] creating /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/share/ament_index/resource_index
+[3.017s] creating /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/share/ament_index/resource_index/packages
+[3.017s] copying resource/moveit_configs_utils -> /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/share/ament_index/resource_index/packages
+[3.018s] copying package.xml -> /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/share/moveit_configs_utils
+[3.018s] creating /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/share/moveit_configs_utils/default_configs
+[3.018s] copying default_configs/chomp_planning.yaml -> /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/share/moveit_configs_utils/default_configs
+[3.018s] copying default_configs/ompl_defaults.yaml -> /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/share/moveit_configs_utils/default_configs
+[3.018s] copying default_configs/pilz_industrial_motion_planner_planning.yaml -> /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/share/moveit_configs_utils/default_configs
+[3.019s] copying default_configs/ompl_planning.yaml -> /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/share/moveit_configs_utils/default_configs
+[3.019s] running install_egg_info
+[3.028s] Copying ../../../build/moveit_configs_utils/moveit_configs_utils.egg-info to /home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages/moveit_configs_utils-2.5.6-py3.10.egg-info
+[3.028s] running install_scripts
+[3.133s] writing list of installed files to '/home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/install.log'
+[3.254s] Invoked command in '/home/user/aiot_robot_project/project_shin/src/moveit2/moveit_configs_utils' returned '0': AMENT_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/srdfdom:/home/user/aiot_robot_project/project_shin/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/aiot_robot_project/project_shin/install/srdfdom LD_LIBRARY_PATH=/home/user/aiot_robot_project/project_shin/install/srdfdom/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/aiot_robot_project/project_shin/install/moveit_configs_utils/lib/python3.10/site-packages:/home/user/aiot_robot_project/project_shin/install/srdfdom/local/lib/python3.10/dist-packages:/home/user/aiot_robot_project/project_shin/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/moveit_configs_utils build --build-base /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/build install --record /home/user/aiot_robot_project/project_shin/build/moveit_configs_utils/install.log --single-version-externally-managed install_data

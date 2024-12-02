@@ -1,0 +1,64 @@
+[0.070s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/moveit_resources_panda_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/aiot_robot_project/project_shin/src/moveit_resources/panda_description -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description
+[0.542s] -- The C compiler identification is GNU 11.4.0
+[0.727s] -- The CXX compiler identification is GNU 11.4.0
+[0.748s] -- Detecting C compiler ABI info
+[1.007s] -- Detecting C compiler ABI info - done
+[1.034s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.035s] -- Detecting C compile features
+[1.036s] -- Detecting C compile features - done
+[1.051s] -- Detecting CXX compiler ABI info
+[1.316s] -- Detecting CXX compiler ABI info - done
+[1.329s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.330s] -- Detecting CXX compile features
+[1.337s] -- Detecting CXX compile features - done
+[1.339s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.748s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.150s] -- Configuring done
+[2.158s] -- Generating done
+[2.164s] -- Build files have been written to: /home/user/aiot_robot_project/project_shin/build/moveit_resources_panda_description
+[2.275s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/moveit_resources_panda_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/aiot_robot_project/project_shin/src/moveit_resources/panda_description -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description
+[2.279s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/moveit_resources_panda_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/aiot_robot_project/project_shin/build/moveit_resources_panda_description -- -j4 -l4
+[2.385s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/moveit_resources_panda_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/aiot_robot_project/project_shin/build/moveit_resources_panda_description -- -j4 -l4
+[2.386s] Invoking command in '/home/user/aiot_robot_project/project_shin/build/moveit_resources_panda_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/aiot_robot_project/project_shin/build/moveit_resources_panda_description
+[2.403s] -- Install configuration: "Release"
+[2.404s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/ament_index/resource_index/package_run_dependencies/moveit_resources_panda_description
+[2.404s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/ament_index/resource_index/parent_prefix_path/moveit_resources_panda_description
+[2.405s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/ament_prefix_path.sh
+[2.407s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/ament_prefix_path.dsv
+[2.407s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/path.sh
+[2.408s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/environment/path.dsv
+[2.409s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/local_setup.bash
+[2.410s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/local_setup.sh
+[2.411s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/local_setup.zsh
+[2.412s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/local_setup.dsv
+[2.415s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.dsv
+[2.418s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/ament_index/resource_index/packages/moveit_resources_panda_description
+[2.418s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/cmake/moveit_resources_panda_descriptionConfig.cmake
+[2.419s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/cmake/moveit_resources_panda_descriptionConfig-version.cmake
+[2.429s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/package.xml
+[2.429s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes
+[2.429s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision
+[2.430s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/hand.stl
+[2.430s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link7.stl
+[2.430s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link4.stl
+[2.430s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link2.stl
+[2.433s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/finger.stl
+[2.434s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link6.stl
+[2.436s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link5.stl
+[2.441s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link1.stl
+[2.442s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link0.stl
+[2.442s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/collision/link3.stl
+[2.442s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual
+[2.442s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link7.dae
+[2.444s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link2.dae
+[2.444s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/hand.dae
+[2.445s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link1.dae
+[2.449s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link6.dae
+[2.455s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link5.dae
+[2.461s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link0.dae
+[2.467s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/finger.dae
+[2.470s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link3.dae
+[2.479s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/meshes/visual/link4.dae
+[2.483s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/urdf
+[2.483s] -- Installing: /home/user/aiot_robot_project/project_shin/install/moveit_resources_panda_description/share/moveit_resources_panda_description/urdf/panda.urdf
+[2.489s] Invoked command in '/home/user/aiot_robot_project/project_shin/build/moveit_resources_panda_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/aiot_robot_project/project_shin/build/moveit_resources_panda_description
