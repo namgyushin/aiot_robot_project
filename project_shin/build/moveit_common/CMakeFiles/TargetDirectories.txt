@@ -1,8 +1,0 @@
-/home/user/aiot_robot_project/project_shin/build/moveit_common/CMakeFiles/uninstall.dir
-/home/user/aiot_robot_project/project_shin/build/moveit_common/CMakeFiles/moveit_common_uninstall.dir
-/home/user/aiot_robot_project/project_shin/build/moveit_common/CMakeFiles/test.dir
-/home/user/aiot_robot_project/project_shin/build/moveit_common/CMakeFiles/edit_cache.dir
-/home/user/aiot_robot_project/project_shin/build/moveit_common/CMakeFiles/rebuild_cache.dir
-/home/user/aiot_robot_project/project_shin/build/moveit_common/CMakeFiles/list_install_components.dir
-/home/user/aiot_robot_project/project_shin/build/moveit_common/CMakeFiles/install.dir
-/home/user/aiot_robot_project/project_shin/build/moveit_common/CMakeFiles/install/local.dir
