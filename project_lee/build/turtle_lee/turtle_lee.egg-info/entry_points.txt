@@ -1,3 +1,4 @@
 [console_scripts]
-
+service_client = turtle_lee.service_client:main
+service_server = turtle_lee.service_server:main
 
