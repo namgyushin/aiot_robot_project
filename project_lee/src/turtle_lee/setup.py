@@ -28,7 +28,6 @@ setup(
     entry_points={
         'console_scripts': [
             #"move_circle = move_turtle.move_circle:main",
-            "project_test1 = turtle_lee.project_test1:main"
 
         ],
     },
