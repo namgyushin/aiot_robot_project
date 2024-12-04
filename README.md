@@ -46,6 +46,9 @@
   - 24.12.03
     - 오전 : 싱글 보드 컴퓨터에 ros2, moveit 설치
     - 오후 : open_manipulator 추가설치, 싱글 보드 컴퓨터에서 로봇팔 작동시도
+  - 24.12.04
+    - 오전 : rviz와 moveit2_tutorials 사용해봄
+    - 오후 : 
 
 
 <hr/> 
