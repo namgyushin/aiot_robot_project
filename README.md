@@ -58,7 +58,9 @@
   - 24.12.05
     - 오전 : realsense 설치시도 (실패)
     - 오후 : realsense 설치시도 (성공)
-
+  - 24.12.06
+    - 오전 : ros에서 realsense, 로봇팔 실행 후 자동방식 구상
+    - 오후 : 로봇팔과 realsense 통신시도
 
 
 <hr/> 
