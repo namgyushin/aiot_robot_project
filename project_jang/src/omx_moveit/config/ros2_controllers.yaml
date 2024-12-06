@@ -1,0 +1,47 @@
+
+# hardware_interface:
+#   joints:
+#     - joint1
+#     - joint2
+#     - joint3
+#     - joint4
+#     - gripper
+#     - virtual_roll_joint
+#     - virtual_yaw_joint
+#   sim_control_mode: 1  # 0: position, 1: velocity
+
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 50  # Hz
+
+    arm_controller:
+      type: omx_moveit/RobotController
+
+    gripper_controller:
+      type: position_controllers/GripperActionController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    joint_state_controller:
+      type: joint_state_controller/JointStateController
+      publish_rate: 50
+
+arm_controller:
+  ros__parameters:
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      # - virtual_roll_joint
+      # - virtual_yaw_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+gripper_controller:
+  ros__parameters:
+    joint: gripper
