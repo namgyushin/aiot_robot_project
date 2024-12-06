@@ -1,0 +1,16 @@
+<library path="omx_moveit">
+  <class name="omx_moveit/RobotSystem"
+         type="omx_moveit::RobotSystem"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Robot hardware plugin
+    </description>
+  </class>
+  <class name="omx_moveit/RobotController"
+         type="omx_moveit::RobotController"
+         base_class_type="controller_interface::ControllerInterface">
+    <description>
+      Robot controller plugin
+    </description>
+  </class>
+</library>
