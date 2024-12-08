@@ -9,14 +9,15 @@
     <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    
     <group name="arm">
-        <joint name="virtua_world_fixed"/>
+        <joint name="v_world"/>
         <joint name="joint1"/>
         <joint name="joint2"/>
         <joint name="joint3"/>
         <joint name="joint4"/>
-        <!-- <joint name="virtual_roll_joint"/>
-        <joint name="virtual_yaw_joint"/> -->
+        <joint name="virtual_roll_joint"/>
+        <joint name="virtual_yaw_joint"/>
         <joint name="end_effector_joint"/>
     </group>
     <group name="gripper">
@@ -29,28 +30,32 @@
         <joint name="joint2" value="-1.7907"/>
         <joint name="joint3" value="1.2153"/>
         <joint name="joint4" value="0.6656"/>
+        <joint name="virtual_roll_joint" value="0"/>
+        <joint name="virtual_yaw_joint" value="0"/>
     </group_state>
     <group_state name="init" group="arm">
         <joint name="joint1" value="0"/>
         <joint name="joint2" value="0"/>
         <joint name="joint3" value="0"/>
         <joint name="joint4" value="0"/>
+        <joint name="virtual_roll_joint" value="0"/>
+        <joint name="virtual_yaw_joint" value="0"/>
     </group_state>
     <group_state name="zero" group="arm">
         <joint name="joint1" value="0"/>
         <joint name="joint2" value="0"/>
         <joint name="joint3" value="0"/>
         <joint name="joint4" value="0"/>
-        <!-- <joint name="virtual_roll_joint" value="0"/>
-        <joint name="virtual_yaw_joint" value="0"/> -->
+        <joint name="virtual_roll_joint" value="0"/>
+        <joint name="virtual_yaw_joint" value="0"/>
     </group_state>
         <group_state name="temp" group="arm">
         <joint name="joint1" value="0.5"/>
         <joint name="joint2" value="0"/>
         <joint name="joint3" value="0"/>
         <joint name="joint4" value="0"/>
-        <!-- <joint name="virtual_roll_joint" value="0"/>
-        <joint name="virtual_yaw_joint" value="0"/> -->
+        <joint name="virtual_roll_joint" value="0"/>
+        <joint name="virtual_yaw_joint" value="0"/>
     </group_state>
     <group_state name="open" group="gripper">
         <joint name="gripper" value="0.019"/>
@@ -59,9 +64,9 @@
         <joint name="gripper" value="-0.01"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="end_effector" parent_link="link5" group="arm"/>
+    <end_effector name="end_ef" parent_link="link5" group="arm" parent_group="arm"/>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
-    <virtual_joint name="virtua_world_fixed" type="fixed" parent_frame="world" child_link="link1"/>
+    <virtual_joint name="v_world" type="fixed" parent_frame="world" child_link="link1"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="gripper_link" link2="gripper_link_sub" reason="Never"/>
     <disable_collisions link1="gripper_link" link2="link4" reason="Never"/>
