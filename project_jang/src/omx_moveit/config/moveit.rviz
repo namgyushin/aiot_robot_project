@@ -66,60 +66,6 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          camera_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          end_effector_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          gripper_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          gripper_link_sub:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          virtual_roll_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          virtual_yaw_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
         Loop Animation: true
         Robot Alpha: 0.5
         Robot Color: 150; 50; 150
@@ -166,60 +112,6 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          camera_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          end_effector_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          gripper_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          gripper_link_sub:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          link5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          virtual_roll_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          virtual_yaw_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
         Robot Alpha: 0.5
         Show Robot Collision: false
         Show Robot Visual: true
@@ -279,5 +171,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1200
-  X: 2400
-  Y: 270
+  X: 2368
+  Y: 238

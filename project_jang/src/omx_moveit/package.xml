@@ -31,6 +31,8 @@
   <depend>realtime_tools</depend>
   <depend>trajectory_msgs</depend>
   <depend>rclpy</depend>
+  <depend>moveit_task_constructor_core</depend>
+  <depend>geometry_msgs</depend>
 
   <exec_depend>moveit_ros_move_group</exec_depend>
   <exec_depend>moveit_kinematics</exec_depend>

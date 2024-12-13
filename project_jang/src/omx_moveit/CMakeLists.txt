@@ -45,13 +45,32 @@ endforeach()
 foreach(Dependency IN ITEMS ${CONTROLLER_INCLUDE_DEPENDS})
   find_package(${Dependency} REQUIRED)
 endforeach()
+find_package(std_msgs REQUIRED)
+find_package(moveit_task_constructor_core REQUIRED)
 
 add_library(
   omx_moveit
   SHARED
   hardware/omx_hardware.cpp
-  controller/omx_controller.cpp
+  controller/omx_arm_controller.cpp
+  controller/omx_gripper_controller.cpp
 )
+
+
+add_executable(pick_and_place src/pick_and_place.cpp)
+ament_target_dependencies(
+  pick_and_place PUBLIC
+  rclcpp
+  std_msgs
+  moveit_task_constructor_core
+  moveit_ros_planning_interface
+)
+
+install(TARGETS 
+  pick_and_place
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 
 target_compile_features(omx_moveit PUBLIC cxx_std_17)
 target_include_directories(omx_moveit PUBLIC

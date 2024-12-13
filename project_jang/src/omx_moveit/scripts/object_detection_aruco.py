@@ -6,7 +6,6 @@ from cv_bridge import CvBridge
 import pyrealsense2 as rs
 import numpy as np
 from rclpy.node import Node
-import message_filters
 from geometry_msgs.msg import TransformStamped
 from sensor_msgs.msg import CameraInfo, Image
 from tf2_ros import Buffer, TransformListener, TransformBroadcaster
@@ -47,6 +46,8 @@ class Object_Detection_Aruco(Node):
     self.cv_bridge = CvBridge()
 
     self.image_pub = self.create_publisher(Image, "/detect/image_raw", 10)
+
+    self.marker_pub = self.create_publisher(TransformStamped, "/detected/marker", 10)
     
     self.info_sub = self.create_subscription(
       Image,
@@ -126,9 +127,26 @@ class Object_Detection_Aruco(Node):
       return
 
     for i, marker_id in enumerate(marker_ids):
-      _, _, tvec = cv2.solvePnP(self.marker_3d_edges, corners[i], self.intrinsic_mat, self.distortion)
-      self.broadcast_transform_aruco(tvec, marker_id)
+      corner = corners[i]
+      corner = np.array(corner).reshape((4, 2))
+      (topLeft, topRight, bottomRight, bottomLeft) = corner
 
+      topRightPoint    = (int(topRight[0]),      int(topRight[1]))
+      topLeftPoint     = (int(topLeft[0]),       int(topLeft[1]))
+      bottomRightPoint = (int(bottomRight[0]),   int(bottomRight[1]))
+      bottomLeftPoint  = (int(bottomLeft[0]),    int(bottomLeft[1]))
+
+      cv2.circle(current_frame, topLeftPoint, 4, self.blue_BGR, -1)
+      cv2.circle(current_frame, topRightPoint, 4, self.blue_BGR, -1)
+      cv2.circle(current_frame, bottomRightPoint, 4, self.blue_BGR, -1)
+      cv2.circle(current_frame, bottomLeftPoint, 4, self.blue_BGR, -1)
+
+      _, _, tvec = cv2.solvePnP(self.marker_3d_edges, corners[i], self.intrinsic_mat, self.distortion)
+      self.broadcast_transform_aruco(tvec, marker_id[0])
+
+    msg = self.cv_bridge.cv2_to_imgmsg(current_frame, "bgr8")
+    msg.header.frame_id = 'camera_link'
+    self.image_pub.publish(msg)
 
 
   def broadcast_transform_aruco(self, tvec, id):
@@ -149,16 +167,17 @@ class Object_Detection_Aruco(Node):
     t.transform.rotation.w = 1.0
 
     self.tf_broadcaster.sendTransform(t)
+    self.marker_pub.publish(t)
 
-    try:
-      transform = self.tf_buffer.lookup_transform(
-        target_frame='link1',
-        source_frame=child_frame_id,
-        time=rclpy.time.Time()
-      )
-      print(transform)
-    except Exception as e:
-      self.get_logger().error(f"depth_callback Exception : {e}")
+    # try:
+    #   transform = self.tf_buffer.lookup_transform(
+    #     target_frame='link1',
+    #     source_frame=child_frame_id,
+    #     time=rclpy.time.Time()
+    #   )
+    #   print(transform)
+    # except Exception as e:
+    #   self.get_logger().error(f"depth_callback Exception : {e}")
 
 
 

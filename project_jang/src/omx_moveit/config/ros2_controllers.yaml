@@ -4,11 +4,12 @@ controller_manager:
     update_rate: 50  # Hz
 
     arm_controller:
-      type: omx_moveit/RobotController
+      type: omx_moveit_arm_controller/RobotController
       # type: joint_trajectory_controller/JointTrajectoryController
 
     gripper_controller:
-      type: position_controllers/GripperActionController
+      type: omx_moveit_gripper_controller/RobotGripperController
+      # type: position_controllers/GripperActionController
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
@@ -34,4 +35,10 @@ arm_controller:
       - velocity
 gripper_controller:
   ros__parameters:
-    joint: gripper
+    joint_state_topic: "/joint_states"
+    joints: 
+      - gripper
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
