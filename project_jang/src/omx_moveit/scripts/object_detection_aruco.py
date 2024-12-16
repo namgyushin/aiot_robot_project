@@ -38,7 +38,7 @@ class Object_Detection_Aruco(Node):
     print("Object_Detection_Aruco")
 
     self.declare_parameter("aruco_dictionary_name", "DICT_4X4_1000")
-    self.declare_parameter("aruco_marker_side_length", 0.01)
+    self.declare_parameter("aruco_marker_side_length", 0.003)
 
     aruco_dictionary_name = self.get_parameter("aruco_dictionary_name").get_parameter_value().string_value
     self.aruco_marker_side_length = self.get_parameter("aruco_marker_side_length").get_parameter_value().double_value
@@ -82,7 +82,7 @@ class Object_Detection_Aruco(Node):
 
     self.blue_BGR = (255, 0, 0)
 
-    self.marker_size = 20
+    self.marker_size = 26
     self.marker_3d_edges = np.array([
       [0, 0, 0],
       [0, self.marker_size, 0],

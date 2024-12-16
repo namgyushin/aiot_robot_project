@@ -89,7 +89,7 @@
         <joint name="gripper" value="0.006"/>
     </group_state>
     <group_state name="close" group="gripper">
-        <joint name="gripper" value="-0.006"/>
+        <joint name="gripper" value="-0.001"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="end_ef" parent_link="link5" group="arm" parent_group="arm"/>

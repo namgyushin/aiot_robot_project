@@ -47,6 +47,10 @@ foreach(Dependency IN ITEMS ${CONTROLLER_INCLUDE_DEPENDS})
 endforeach()
 find_package(std_msgs REQUIRED)
 find_package(moveit_task_constructor_core REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(omx_moveit_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 add_library(
   omx_moveit
@@ -62,12 +66,55 @@ ament_target_dependencies(
   pick_and_place PUBLIC
   rclcpp
   std_msgs
+  geometry_msgs
+  tf2
+  tf2_ros
+  omx_moveit_msgs
+  moveit_task_constructor_core
+  realtime_tools
+)
+
+add_executable(drop src/drop.cpp)
+ament_target_dependencies(
+  drop PUBLIC
+  rclcpp
+  std_msgs
+  geometry_msgs
+  omx_moveit_msgs
+)
+
+add_executable(pickup src/pickup.cpp)
+ament_target_dependencies(
+  pickup PUBLIC
+  rclcpp
+  std_msgs
+  geometry_msgs
+  tf2
+  tf2_ros
+  omx_moveit_msgs
+  moveit_task_constructor_core
+  realtime_tools
+  sensor_msgs
+  trajectory_msgs
+)
+
+add_executable(robot_execute src/robot_execute.cpp)
+ament_target_dependencies(
+  robot_execute PUBLIC
+  rclcpp
+  std_msgs
   moveit_task_constructor_core
   moveit_ros_planning_interface
+  omx_moveit_msgs
 )
+
+
 
 install(TARGETS 
   pick_and_place
+  drop
+  pickup
+  robot_execute
   DESTINATION lib/${PROJECT_NAME}
 )
 
