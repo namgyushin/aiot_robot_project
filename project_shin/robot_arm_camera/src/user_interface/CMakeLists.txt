@@ -9,7 +9,11 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
+find_package(action_msgs REQUIRED)  # action_msgs 패키지 의존성 추가
+find_package(rclpy REQUIRED)
+find_package(std_msgs REQUIRED)
 
+# Generate messages, services, and actions
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/UserInt.msg"
   "srv/AddAndOdd.srv"
@@ -17,7 +21,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ArithmeticArgument.msg"
   "srv/ArithmeticOperator.srv"
   "action/ArithmeticChecker.action"
-  DEPENDENCIES builtin_interfaces
+  "action/Bool.action"  # Bool.action 추가
+  DEPENDENCIES 
+    builtin_interfaces
+    action_msgs  # action_msgs 의존성 추가
 )
 
 if(BUILD_TESTING)
