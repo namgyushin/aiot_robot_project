@@ -1,5 +1,5 @@
 
-#include "omx_moveit/omx_controller.hpp"
+#include "omx_moveit/omx_arm_controller.hpp"
 
 #include <stddef.h>
 #include <algorithm>
@@ -17,12 +17,14 @@ using config_type = controller_interface::interface_configuration_type;
 using FollowJointTrajectory = control_msgs::action::FollowJointTrajectory;
 using GoalHandleFollowJointTrajectory = rclcpp_action::ServerGoalHandle<FollowJointTrajectory>;
 
-namespace omx_moveit
+namespace omx_moveit_arm_controller
 {
 
-auto logger_ = rclcpp::get_logger("omx_controller");
+auto logger_ = rclcpp::get_logger("omx_moveit_arm_controller");
 
 RobotController::RobotController() : controller_interface::ControllerInterface() {}
+
+
 controller_interface::CallbackReturn RobotController::on_init(){
   RCLCPP_INFO(logger_, "on_init");
 
@@ -31,11 +33,9 @@ controller_interface::CallbackReturn RobotController::on_init(){
   command_interface_types_ = auto_declare<std::vector<std::string>>("command_interfaces", command_interface_types_);
   state_interface_types_ = auto_declare<std::vector<std::string>>("state_interfaces", state_interface_types_);
 
-  point_interp_.positions.assign(joint_names_.size(), 0);
-  point_interp_.velocities.assign(joint_names_.size(), 0);
-
   return CallbackReturn::SUCCESS;
 }
+
 
 controller_interface::InterfaceConfiguration RobotController::command_interface_configuration() const {
   RCLCPP_INFO(logger_, "command_interface_configuration");
@@ -51,6 +51,7 @@ controller_interface::InterfaceConfiguration RobotController::command_interface_
   return conf;
 }
 
+
 controller_interface::InterfaceConfiguration RobotController::state_interface_configuration() const {
   RCLCPP_INFO(logger_, "state_interface_configuration");
   controller_interface::InterfaceConfiguration conf = {config_type::INDIVIDUAL, {}};
@@ -64,7 +65,6 @@ controller_interface::InterfaceConfiguration RobotController::state_interface_co
 
   return conf;
 }
-
 
 
 rclcpp_action::GoalResponse RobotController::goal_received_callback(
@@ -136,6 +136,7 @@ controller_interface::CallbackReturn RobotController::on_configure(const rclcpp_
   return CallbackReturn::SUCCESS;
 }
 
+
 controller_interface::CallbackReturn RobotController::on_activate(const rclcpp_lifecycle::State &){
   RCLCPP_INFO(logger_, "on_activate");
 
@@ -159,35 +160,6 @@ controller_interface::CallbackReturn RobotController::on_activate(const rclcpp_l
 }
 
 
-void interpolate_point(
-  const trajectory_msgs::msg::JointTrajectoryPoint & point_1,
-  const trajectory_msgs::msg::JointTrajectoryPoint & point_2,
-  trajectory_msgs::msg::JointTrajectoryPoint & point_interp, double delta
-){
-  for(size_t i = 0; i < point_1.positions.size(); i++){
-    point_interp.positions[i] = delta * point_2.positions[i] + (1.0 - delta) * point_1.positions[i];
-  }
-
-  for(size_t i = 0; i < point_1.velocities.size(); i++){
-    point_interp.velocities[i] = delta * point_2.velocities[i] + (1.0 - delta) * point_1.velocities[i];
-  }
-}
-
-void interpolate_trajectory_point(
-  const trajectory_msgs::msg::JointTrajectory & traj_msg, 
-  const rclcpp::Duration & cur_time,
-  trajectory_msgs::msg::JointTrajectoryPoint & point_interp
-){
-  double traj_len = traj_msg.points.size();
-  auto last_time = traj_msg.points[traj_len - 1].time_from_start;
-  double total_time = last_time.sec + last_time.nanosec * 1E-9;
-
-  size_t ind = cur_time.seconds() * (traj_len / total_time);
-  ind = std::min(static_cast<double>(ind), traj_len - 2);
-  double delta = cur_time.seconds() - ind * (total_time / traj_len);
-  interpolate_point(traj_msg.points[ind], traj_msg.points[ind + 1], point_interp, delta);
-}
-
 controller_interface::return_type RobotController::update(const rclcpp::Time & time, const rclcpp::Duration & period){
   (void)period;
 
@@ -198,16 +170,12 @@ controller_interface::return_type RobotController::update(const rclcpp::Time & t
   }
 
   if(trajectory_msg_ != nullptr){
-    // interpolate_trajectory_point(*trajectory_msg_, time - start_time_, point_interp_);
-
     for(size_t i = 0; i < joint_position_command_interface_.size(); i++){
       joint_position_command_interface_[i].get().set_value(trajectory_msg_->points[0].positions[i]);
-      // std::cerr << "trajectory_msg_.positions[i]" << trajectory_msg_->points[0].positions[i] << std::endl;
     }
 
     for(size_t i = 0; i < joint_velocity_command_interface_.size(); i++){
       joint_velocity_command_interface_[i].get().set_value(trajectory_msg_->points[0].velocities[i]);
-      // std::cerr << "trajectory_msg_.velocities[i]" << trajectory_msg_->points[0].velocities[i] << std::endl;
     }
 
     if(trajectory_msg_->points.size() == 1){
@@ -217,12 +185,11 @@ controller_interface::return_type RobotController::update(const rclcpp::Time & t
 
     trajectory_msg_->points.erase(trajectory_msg_->points.begin());
 
-    // std::cerr << "trajectory_msg_.points.size" << trajectory_msg_->points.size() << std::endl;
-
   }
 
   return controller_interface::return_type::OK;
 }
+
 
 controller_interface::CallbackReturn RobotController::on_deactivate(const rclcpp_lifecycle::State &){
   RCLCPP_INFO(logger_, "on_deactivate");
@@ -231,23 +198,27 @@ controller_interface::CallbackReturn RobotController::on_deactivate(const rclcpp
   return CallbackReturn::SUCCESS;
 }
 
+
 controller_interface::CallbackReturn RobotController::on_cleanup(const rclcpp_lifecycle::State &){
   RCLCPP_INFO(logger_, "on_cleanup");
   return CallbackReturn::SUCCESS;
 }
+
 
 controller_interface::CallbackReturn RobotController::on_error(const rclcpp_lifecycle::State &){
   RCLCPP_INFO(logger_, "on_error");
   return CallbackReturn::SUCCESS;
 }
 
+
 controller_interface::CallbackReturn RobotController::on_shutdown(const rclcpp_lifecycle::State &){
   RCLCPP_INFO(logger_, "on_shutdown");
   return CallbackReturn::SUCCESS;
 }
 
-}  // namespace omx_moveit
+
+}  // namespace omx_moveit_arm_controller
 
 #include "pluginlib/class_list_macros.hpp"
 
-PLUGINLIB_EXPORT_CLASS(omx_moveit::RobotController, controller_interface::ControllerInterface)
+PLUGINLIB_EXPORT_CLASS(omx_moveit_arm_controller::RobotController, controller_interface::ControllerInterface)
