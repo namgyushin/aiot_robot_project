@@ -247,18 +247,27 @@ def main():
             rclpy.spin_once(teleop_keyboard)
             key_value = get_key(settings)
             
-            if key_value == '1':
+            if key_value == '0':
                 goal_joint_angle[0] = -3.0
                 goal_joint_angle[1] = 0.0
                 goal_joint_angle[2] = 0.35
                 goal_joint_angle[3] = 1.0
                 pathtime = 2.0
                 teleop_keyboard.send_goal_joint_space(pathtime)
-            elif key_value == '2':
+            elif key_value == '1':
                 goal_joint_angle[0] = 0.0
                 goal_joint_angle[1] = -1.05
                 goal_joint_angle[2] = 0.35
-                goal_joint_angle[3] = 0.70
+                goal_joint_angle[3] = 1.20
+                goal_joint_angle[4] = 0.01
+                pathtime = 2.0
+                teleop_keyboard.send_goal_joint_space(pathtime)
+                teleop_keyboard.send_tool_control_request()
+            elif key_value == '2':
+                goal_joint_angle[0] = 0.0
+                goal_joint_angle[1] = 0.0
+                goal_joint_angle[2] = 0.0
+                goal_joint_angle[3] = 0.60
                 goal_joint_angle[4] = 0.01
                 pathtime = 2.0
                 teleop_keyboard.send_goal_joint_space(pathtime)
@@ -267,47 +276,56 @@ def main():
                 goal_joint_angle[0] = 0.0
                 goal_joint_angle[1] = 0.0
                 goal_joint_angle[2] = 0.0
-                goal_joint_angle[3] = 0.0
-                goal_joint_angle[4] = 0.01
+                goal_joint_angle[3] = 0.60
+                goal_joint_angle[4] = -0.006
                 pathtime = 2.0
                 teleop_keyboard.send_goal_joint_space(pathtime)
                 teleop_keyboard.send_tool_control_request()
+            # elif key_value == '5':
+            #     goal_joint_angle[0] = -1.5
+            #     goal_joint_angle[1] = 1.0
+            #     goal_joint_angle[2] = -1.0
+            #     goal_joint_angle[3] = 0.0
+            #     goal_joint_angle[4] = -0.01
+            #     pathtime = 2.0
+            #     teleop_keyboard.send_goal_joint_space(pathtime)
+            #     teleop_keyboard.send_tool_control_request()
+            # elif key_value == '6':
+            #     goal_joint_angle[0] = -1.5
+            #     goal_joint_angle[1] = 1.0
+            #     goal_joint_angle[2] = -1.0
+            #     goal_joint_angle[3] = 0.0
+            #     goal_joint_angle[4] = 0.01
+            #     pathtime = 2.0
+            #     teleop_keyboard.send_goal_joint_space(pathtime)
+            #     teleop_keyboard.send_tool_control_request()
             elif key_value == '4':
-                goal_joint_angle[0] = 0.0
+                goal_joint_angle[0] = -1.5
                 goal_joint_angle[1] = 0.0
                 goal_joint_angle[2] = 0.0
-                goal_joint_angle[3] = 0.0
-                goal_joint_angle[4] = -0.01
+                goal_joint_angle[3] = 0.07
+                goal_joint_angle[4] = -0.006
                 pathtime = 2.0
                 teleop_keyboard.send_goal_joint_space(pathtime)
                 teleop_keyboard.send_tool_control_request()
             elif key_value == '5':
                 goal_joint_angle[0] = -1.5
-                goal_joint_angle[1] = 1.0
-                goal_joint_angle[2] = -1.0
-                goal_joint_angle[3] = 0.0
-                goal_joint_angle[4] = -0.01
+                goal_joint_angle[1] = 0.0
+                goal_joint_angle[2] = 0.0
+                goal_joint_angle[3] = 0.07
+                goal_joint_angle[4] = 0.01
                 pathtime = 2.0
                 teleop_keyboard.send_goal_joint_space(pathtime)
                 teleop_keyboard.send_tool_control_request()
             elif key_value == '6':
-                goal_joint_angle[0] = -1.5
-                goal_joint_angle[1] = 1.0
-                goal_joint_angle[2] = -1.0
-                goal_joint_angle[3] = 0.0
+                goal_joint_angle[0] = 0.0
+                goal_joint_angle[1] = -1.05
+                goal_joint_angle[2] = 0.35
+                goal_joint_angle[3] = 1.20
                 goal_joint_angle[4] = 0.01
                 pathtime = 2.0
                 teleop_keyboard.send_goal_joint_space(pathtime)
-                teleop_keyboard.send_tool_control_request()
-            elif key_value == '7':
-                goal_joint_angle[0] = -1.5
-                goal_joint_angle[1] = 0.0
-                goal_joint_angle[2] = 0.0
-                goal_joint_angle[3] = 0.0
-                goal_joint_angle[4] = 0.01
-                pathtime = 2.0
-                teleop_keyboard.send_goal_joint_space(pathtime)
-                teleop_keyboard.send_tool_control_request()
+                teleop_keyboard.send_tool_control_request()    
             else:
                 if key_value == '\x03':
                     break
