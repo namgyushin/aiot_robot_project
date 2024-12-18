@@ -10,6 +10,7 @@ from launch_ros.substitutions import FindPackageShare
 from launch.conditions import IfCondition
 from launch_ros.parameter_descriptions import ParameterValue
 from ament_index_python.packages import get_package_share_directory
+from launch_ros.substitutions import FindPackageShare
 
 
 
@@ -48,11 +49,14 @@ def generate_launch_description():
     interface,
   ])
 
+  kinematics_yaml = os.path.join(get_package_share_directory('omx_moveit'), 'config', 'kinematics.yaml')
+  print(kinematics_yaml)
+  # Example for loading the parameters
 
   robot_description = {"robot_description": robot_description_content}
 
   ld = LaunchDescription()
-  ld.add_action(DeclareBooleanLaunchArg("use_sim_time", default_value=False))
+  ld.add_action(DeclareBooleanLaunchArg("use_sim_time", default_value=True))
 
   ld.add_action(
     Node(
@@ -142,12 +146,13 @@ def generate_launch_description():
   move_group_moveit_config = (
     MoveItConfigsBuilder("open_manipulator_x", package_name="omx_moveit")
     .robot_description(file_path="config/open_manipulator_x.urdf.xacro")
+    .robot_description_kinematics(file_path=kinematics_yaml)
     .trajectory_execution(file_path="config/moveit_controllers.yaml")
     .planning_scene_monitor(
       publish_robot_description=True, publish_robot_description_semantic=True
     )
     .planning_pipelines(
-      pipelines=["ompl", "chomp", "pilz_industrial_motion_planner"],
+      pipelines=["ompl"],
       default_planning_pipeline="ompl"
     )
     .to_moveit_configs()
@@ -177,20 +182,43 @@ def generate_launch_description():
   move_group_params = [
     move_group_moveit_config.to_dict(),
     move_group_configuration,
-    # os.path.join(get_package_share_directory("omx_moveit"), "config", "ompl_planning.yaml")
   ]
 
   add_debuggable_node(
     ld,
     package="moveit_ros_move_group",
     executable="move_group",
-    commands_file=str(moveit_config.package_path / "launch" / "gdb_settings.gdb"),
     output="screen",
     parameters=move_group_params,
     extra_debug_args=["--debug"],
-    # Set the display variable, in case OpenGL code is used internally
     additional_env={"DISPLAY": os.environ["DISPLAY"]},
   )
 
+  #     # Static TF
+  # ld.add_action(
+  #   Node(
+  #     package="tf2_ros",
+  #     executable="static_transform_publisher",
+  #     name="static_transform_publisher",
+  #     output="log",
+  #     arguments=["0.0", "0.0", "0.0", "0.0", "world", "link1"],
+  #   )
+  # )
+
+
+  # realsense2_camera
+  ld.add_action(
+    IncludeLaunchDescription(
+      PathJoinSubstitution([
+        FindPackageShare('realsense2_camera'),
+        'launch',
+        'rs_launch.py'
+      ]),
+      launch_arguments={
+        'pointcloud.enable': 'true',
+        'publish_tf': 'true',
+      }.items()
+    )
+  )
 
   return ld

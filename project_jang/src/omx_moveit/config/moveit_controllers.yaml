@@ -17,8 +17,8 @@ moveit_simple_controller_manager:
       - joint2
       - joint3
       - joint4
-      # - virtual_roll_joint
-      # - virtual_yaw_joint
+      - virtual_roll_joint
+      - virtual_yaw_joint
       
   gripper_controller:
     type: GripperCommand

@@ -6,11 +6,18 @@
       Robot hardware plugin
     </description>
   </class>
-  <class name="omx_moveit/RobotController"
-         type="omx_moveit::RobotController"
+  <class name="omx_moveit_arm_controller/RobotController"
+         type="omx_moveit_arm_controller::RobotController"
          base_class_type="controller_interface::ControllerInterface">
     <description>
       Robot controller plugin
+    </description>
+  </class>
+    <class name="omx_moveit_gripper_controller/RobotGripperController"
+         type="omx_moveit_gripper_controller::RobotGripperController"
+         base_class_type="controller_interface::ControllerInterface">
+    <description>
+      Robot Gripper controller plugin
     </description>
   </class>
 </library>
